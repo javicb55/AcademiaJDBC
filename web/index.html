@@ -6,43 +6,60 @@ and open the template in the editor.
 -->
 <html>
     <head>
+        
+        <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <script src="js/newjavascript.js" type="text/javascript"></script>
+        <script src="js/materialize.min.js" type="text/javascript"></script>
+        
         <link href="css/materialize.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/css.css" rel="stylesheet" type="text/css"/>
-        <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
-        <script src="js/materialize.min.js" type="text/javascript"></script>
-        <title>TODO supply a title</title>
+        <link href="css/materialize.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+        
+        <title>Gestión Académica</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+    
     <body>              
         <nav>
           <div class="nav-wrapper">
-              <a href="#" class="brand-logo center">Logo</a>
-              <ul id="nav-mobile" class="left hide-on-med-and-down">
+              <a href="drawable/logo.png" class="brand-logo center">
+                  <img src="drawable/logo.png" alt="Logo" id="logo"/> 
+              </a>
+             
+              <ul id="nav-mobile" class="left hide-on-med-and-down"  data-collapsible="accordion"> 
                 <li><a href="alumnos.hmtl">Alumnos</a></li>
                 <li><a href="profesores.html">Profesores</a></li>
                 <li><a href="asignaturas.html">Asignaturas</a></li>
               </ul>
+               
+              
           </div>
         </nav>
         
-        <div>
+       
+       
+        
+        
+        <div id="imagenPrincipal" class="panel">
             <img src="drawable/league.png" alt="Liga Leyendas" id="liga-leyendas"/>
         </div>
 
         <div id="main" class="panel">
-            Main
+            Vista inicial de la aplicación
         </div>
         
         <div id="formularioAlumno" class="panel">
-            Formulario
+            Formulario para añadir y editar un alumno
         </div>
         
         <div id="listadoAlumno" class="panel">
-            Listado
+            Listado de alumnos y gestión de modificaciones y borrados
         </div>
         
-        
+        <div id="error" class="panel">
+            Caja para la gestión de errores (mostrar errores y/o avisos)
+        </div>
         
     </body>
-</html>
+
